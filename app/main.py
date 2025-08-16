@@ -45,3 +45,4 @@ async def health():
 async def on_startup():
     async with engine.begin() as conn:
         await conn.run_sync(base.Base.metadata.create_all)
+#testing1
